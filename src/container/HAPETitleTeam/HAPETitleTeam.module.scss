@@ -1,0 +1,28 @@
+.HAPETitleTeam {
+    background-color: white;
+    padding-top: 20vh;
+    min-height: 50vh;
+    & h1{
+        margin: auto;
+        width: 65%;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        line-height: 1;
+        font-family: HAPEfont;
+        margin-top: 25vh;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width:820px) {
+    .HAPETitleTeam {
+        padding: 100px 20px;
+        min-height: auto;
+        & h1{
+            font-size: 36px;
+            width: 90%;
+            margin-top: 0;
+            transform: translateY(0);
+        }
+    }
+}

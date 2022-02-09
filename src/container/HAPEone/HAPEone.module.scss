@@ -1,0 +1,83 @@
+.HAPEone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 28px);
+    background-image: url(../../media/banner-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: center center;
+    &Title{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50vh;
+    margin-top: 112px;
+    text-align: center;
+    & br{
+        display: none;
+    }
+    & span {
+        margin-top: 48px;
+        font-size: 21px;
+        font-weight: 700;
+        font-family: HB,sans-serif;
+        font-style: normal;
+        letter-spacing: 0;
+        color: white;
+    }
+    &P{
+        margin-top: 48px;
+    }
+    
+    & button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+        background: linear-gradient(90deg,#fff,#fff);
+        padding: 16px 24px;
+        font-family: HB,sans-serif;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        min-width: 200px;
+        margin-top: 12px;
+    }
+    &mt6{
+        font-size: 15px;
+        margin-top: 24px;
+    }
+    &mt8{
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    &mt9{
+        margin-top: 12px;
+    }
+}
+}
+
+@media screen and (max-width: 800px) {
+    .HAPEone{
+        // background-image: url(../../media/banner-img-1024.webp);
+        &Title{
+            & br{
+                display: block;
+            }
+            & span {
+                margin-top: 16px;
+            }
+            & h1{
+                font-size: 36px;
+            }
+            & p{
+                margin-top: 16px;
+            }
+        }
+    }
+}

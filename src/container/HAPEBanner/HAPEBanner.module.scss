@@ -1,0 +1,14 @@
+.HAPEBanner{
+    height: 0px;
+    min-height: 95vh;
+    max-height: 99999px;
+    align-self: stretch;
+    justify-self: stretch;
+    position: relative;
+    grid-area: 17/1/18/2;
+}
+@media screen and (max-width:820px) {
+    .HAPEBanner{
+        min-height: 50vh;
+    }
+}

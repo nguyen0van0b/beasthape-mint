@@ -1,0 +1,100 @@
+.HAPEFooter{
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    &Wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &Dec{
+        width: 440px;
+        margin-bottom: 100px;
+        & h1{
+            text-align: left;
+            font-size: 32px;
+        }
+        & h6{
+            color: #e3e3e3;
+            font-size: 21px;
+            margin-top: 20px;
+            line-height: 1.85;
+            font-family: barlow-extralight, barlow, sans-serif;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+    &About{
+        display: flex;
+        & h4{
+            color: #e3e3e3;
+            font-family: HB,sans-serif;
+            font-size: 12px;
+        }
+        &Follow{
+            width: 60%;
+            &Icon{
+                margin-top: 22px;
+                display: flex;
+            }
+            & img{
+                width: 32px;
+                height: 32px;
+                margin-right: 20%;
+            }
+        }
+        &Contact{
+            width: 40%;
+            margin-left: 80px;
+            margin-bottom: 20px;
+            &Email{
+                margin-top: 22px;
+                color: #e3e3e3;
+                font-size: 14px;
+            }
+        }
+    }
+    &Copyright{
+        padding-top: 40px;
+        & p{
+        margin-top: 20px;
+        color: #e3e3e3;
+        font-size: 12px;
+        font-family: barlow-extralight, barlow, sans-serif;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-style: normal;
+       }
+    }
+}
+@media screen and (max-width:1000px) {
+    .HAPEFooterDec h6{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:820px) {
+    .HAPEFooter{
+        &Wrapper{
+            flex-direction: column;
+        }
+        &Dec{
+            width:100%;
+        }
+        &About{
+            flex-direction: column;
+            &Follow{
+                width: 100%;
+            }
+            &Contact{
+                width: 100%;
+                margin-top: 50px;
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
